@@ -26,7 +26,8 @@ This is a classic Minesweeper game implemented in C using the raylib library. Th
 
 Watch a short video demonstration of the gameplay:
 
-[![Minesweeper Video Demo](game_play.png)](game_play.mov)
+[![Minesweeper Video Demo](game_play.png)](https://raw.githubusercontent.com/your-username/your-repo-name/master/game_play.mov)
+
 
 ## How to Run
 
