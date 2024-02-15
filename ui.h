@@ -52,8 +52,9 @@ void draw_button(Button button, Vector2 mousePoint, int *value)
 void draw_text_message(Board *board, char *message, Vector2 screen, Color c, int *value)
 {
     // Calculate the positions of the texts
+    const char *button_message = "Start Over";
     Vector2 messageTextPos = {screen.x / 2 - MeasureText(message, 40) / 2, screen.y / 2 - 40};
-    Vector2 startOverTextPos = {screen.x / 2 - MeasureText("Click to Start Over", 20) / 2, screen.y / 2 + 10};
+    Vector2 startOverTextPos = {screen.x / 2 - MeasureText(button_message, 20) / 2, screen.y / 2 + 10};
 
     // Draw the background for the message and button
     float boxWidth = MeasureText(message, 40) + 40; // Adjust the width based on your text
@@ -67,9 +68,9 @@ void draw_text_message(Board *board, char *message, Vector2 screen, Color c, int
 
     // Example button
     Button startOverButton = {
-        .rect = {screen.x / 2 - MeasureText("Click to Start Over", 20) / 2, screen.y / 2 + 10, MeasureText("Click to Start Over", 20), 20},
+        .rect = {screen.x / 2 - MeasureText(button_message, 20) / 2, screen.y / 2 + 10, MeasureText(button_message, 20), 20},
         .color = BLUE,
-        .text = "Click to Start Over",
+        .text = button_message,
         .valueToChange = value,
     };
 

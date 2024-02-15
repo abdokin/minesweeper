@@ -3,7 +3,7 @@
 #include <string.h>
 #include "board.h"
 #include "ui.h"
-
+#include <raylib.h>
 
 
 
@@ -18,6 +18,7 @@ int main(void)
         .x = 800,
         .y = 800,
     };
+
     Board board;
     initialize_board(&board);
     Vector2 mousePoint = {0.0f, 0.0f};
@@ -28,7 +29,6 @@ int main(void)
     InitWindow(screen.x, screen.y, "Minesweeper");
 
     SetTargetFPS(60);
-
     // Main game loop
     while (!WindowShouldClose())
     {
