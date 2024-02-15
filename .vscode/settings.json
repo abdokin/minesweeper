@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "ranlib.h": "c",
+        "stdlib.h": "c"
+    }
+}
