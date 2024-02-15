@@ -20,15 +20,13 @@ This is a classic Minesweeper game implemented in C using the raylib library. Th
 
 ## Screenshots
 
-![Gameplay](minesweeper_gameplay.png)
-![Game Over](minesweeper_game_over.png)
-![Victory](minesweeper_victory.png)
+![Gameplay](game_play.png)
 
 ## Video Demo
 
 Watch a short video demonstration of the gameplay:
 
-[![Minesweeper Video Demo](game_play.png)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+[![Minesweeper Video Demo](game_play.png)](game_play.mov)
 
 ## How to Run
 
@@ -39,9 +37,9 @@ Watch a short video demonstration of the gameplay:
 
 ## Credits
 
-- Developed by [Your Name]
+- Developed by Abdokin
 - Built with [raylib](https://www.raylib.com/)
-- Icons made by [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/)
+<!-- - Icons made by [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/) -->
 
 ## License
 
