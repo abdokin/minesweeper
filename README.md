@@ -20,7 +20,7 @@ This is a classic Minesweeper game implemented in C using the raylib library. Th
 
 ## Screenshots
 
-<!-- ![Gameplay](game_play.png) -->
+![Gameplay](game_play.png)
 ![Game Victory](game_victory.png)
 ![Game Over](game_over.png)
 
