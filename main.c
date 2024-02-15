@@ -5,8 +5,6 @@
 #include "ui.h"
 #include <raylib.h>
 
-
-
 int main(void)
 {
     // Initialization
@@ -42,11 +40,11 @@ int main(void)
             reveal_on_hover(&board, mousePoint);
             reveal_on_click(&board, mousePoint, &gameOver);
         }
-
+        playerWon = isPlayerWin(&board);
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-        ClearBackground(GRAY);
+        ClearBackground(LIGHTGRAY);
         draw_board(&board, screen);
 
         if (gameOver || playerWon || gameStart)

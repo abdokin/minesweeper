@@ -172,6 +172,7 @@ void draw_board(Board *b, Vector2 boundaries)
             }
             else if (b->data[i][j].marked == 1)
             {
+                DrawRectangleRec(cellRect, BLUE);
                 DrawText("!!", cellRect.x + CELL_SIZE / 2 - MeasureText("!!", 20) / 2, cellRect.y + CELL_SIZE / 2 - 20 / 2, 20, BLACK);
             }
             else
@@ -241,6 +242,7 @@ void reveal_on_click(Board *b, Vector2 mousePoint, int *gameOver)
             if (b->data[row][col].state == -1)
             {
                 *gameOver = 1;
+                b->data[row][col].shown = 1;
             }
             else
             {

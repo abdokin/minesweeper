@@ -45,7 +45,7 @@ void draw_button(Button button, Vector2 mousePoint, int *value)
     }
 
     // Draw button text with padding
-    DrawText(button.text, button.rect.x + button.rect.width / 2 - MeasureText(button.text, 20) / 2,
+    DrawText(button.text, button.rect.x + button.rect.width / 2 - MeasureText(button.text, 10) / 2,
              button.rect.y + button.rect.height / 2 - 20 / 2, 20, WHITE);
 }
 
@@ -53,22 +53,23 @@ void draw_text_message(Board *board, char *message, Vector2 screen, Color c, int
 {
     // Calculate the positions of the texts
     const char *button_message = "Start Over";
-    Vector2 messageTextPos = {screen.x / 2 - MeasureText(message, 40) / 2, screen.y / 2 - 40};
-    Vector2 startOverTextPos = {screen.x / 2 - MeasureText(button_message, 20) / 2, screen.y / 2 + 10};
+    const int font_size = 30;
+    Vector2 messageTextPos = {screen.x / 2 - MeasureText(message, font_size) / 2, screen.y / 2 - font_size};
+    Vector2 startOverTextPos = {screen.x / 2 - MeasureText(button_message, font_size) / 2, screen.y / 2 + 10};
 
     // Draw the background for the message and button
-    float boxWidth = MeasureText(message, 40) + 40; // Adjust the width based on your text
+    float boxWidth = MeasureText(message, font_size) + font_size; // Adjust the width based on your text
     float boxHeight = 120;                          // Adjust the height based on your text size
 
-    DrawRectangle(screen.x / 2 - boxWidth / 2, screen.y / 2 - boxHeight / 2, boxWidth, boxHeight, LIGHTGRAY);
+    DrawRectangle(screen.x / 2 - boxWidth / 2, screen.y / 2 - boxHeight / 2, boxWidth, boxHeight, WHITE);
     DrawRectangleLines(screen.x / 2 - boxWidth / 2, screen.y / 2 - boxHeight / 2, boxWidth, boxHeight, BLACK);
 
     // Draw the message text
-    DrawText(message, messageTextPos.x, messageTextPos.y, 40, c);
+    DrawText(message, messageTextPos.x, messageTextPos.y, font_size, c);
 
     // Example button
     Button startOverButton = {
-        .rect = {screen.x / 2 - MeasureText(button_message, 20) / 2, screen.y / 2 + 10, MeasureText(button_message, 20), 20},
+        .rect = {screen.x / 2 - MeasureText(button_message, 10) / 2, screen.y / 2 + 10, MeasureText(button_message, 10), 20},
         .color = BLUE,
         .text = button_message,
         .valueToChange = value,
