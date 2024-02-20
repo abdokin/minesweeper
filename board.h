@@ -143,7 +143,7 @@ void fill_mines(Board *b)
     }
 }
 
-void draw_board(Board *b, Vector2 boundaries)
+void draw_board(Board *b)
 {
 
     for (int i = 0; i < b->row; i++)

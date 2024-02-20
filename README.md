@@ -2,7 +2,7 @@
 
 This is a classic Minesweeper game implemented in C using the raylib library. The game features a grid-based board where players must reveal tiles while avoiding hidden mines. 
 
-![Minesweeper](game_over.png)
+![Minesweeper](/screenshots/game_over.png)
 
 ## How to Play
 
@@ -21,8 +21,8 @@ This is a classic Minesweeper game implemented in C using the raylib library. Th
 ## Screenshots
 
 <!-- ![Gameplay](game_play.png) -->
-![Game Victory](game_victory.png)
-![Game Over](game_over.png)
+![Game Victory](/screenshots/game_victory.png)
+![Game Over](/screenshots/game_over.png)
 
 
 
@@ -37,7 +37,6 @@ This is a classic Minesweeper game implemented in C using the raylib library. Th
 
 - Developed by Abdokin
 - Built with [raylib](https://www.raylib.com/)
-<!-- - Icons made by [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/) -->
 
 ## License
 

@@ -45,7 +45,7 @@ int main(void)
         //----------------------------------------------------------------------------------
         BeginDrawing();
         ClearBackground(LIGHTGRAY);
-        draw_board(&board, screen);
+        draw_board(&board);
 
         if (gameOver || playerWon || gameStart)
         {

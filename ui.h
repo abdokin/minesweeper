@@ -55,8 +55,6 @@ void draw_text_message(Board *board, char *message, Vector2 screen, Color c, int
     const char *button_message = "Start Over";
     const int font_size = 30;
     Vector2 messageTextPos = {screen.x / 2 - MeasureText(message, font_size) / 2, screen.y / 2 - font_size};
-    Vector2 startOverTextPos = {screen.x / 2 - MeasureText(button_message, font_size) / 2, screen.y / 2 + 10};
-
     // Draw the background for the message and button
     float boxWidth = MeasureText(message, font_size) + font_size; // Adjust the width based on your text
     float boxHeight = 120;                          // Adjust the height based on your text size
